@@ -1,0 +1,57 @@
+#divarrow{
+    width:20%;
+    line-height:50px;
+    position:relative;
+    background:red;
+    text-align:center;
+    margin:50px auto;
+	color:white;
+	font-weight:bold;
+}
+#divarrow:after, #divarrow:before{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:50%;
+    left:100%;
+}
+#divarrow:after{
+    bottom:0;
+    background: linear-gradient(to right bottom, red 50%, transparent 50%);
+}
+#divarrow:before{
+      top:0;
+    background: linear-gradient(to right top, red 50%, transparent 50%);
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6B3B85;
+  height: 4%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 4px 4px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #D095D9;
+}
+
+.active {
+  background-color: cyan;
+}
